@@ -65,7 +65,7 @@ try:
             st.selectbox("Language", [None] + list(available_languages.keys()), key='translation_language')
 
 
-    question = st.text_input("Hey! What would you like to know about your RFPs?", default_question)
+    question = st.text_input("What would you like to know about your RFPs?", default_question)
 
     if question != '':
         if question != st.session_state['question']:
